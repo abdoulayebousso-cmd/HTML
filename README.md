@@ -1,4 +1,4 @@
-# CV Interactif — Amadou Diallo
+# CV Interactif — Abdoulaye Bousso
 
 ## Description
 CV web moderne et interactif réalisé en HTML5, CSS3 et JavaScript natif (Vanilla JS), dans le cadre du module Développement Web — Licence 2 Informatique, Université Iba Der Thiam de Thiès.
@@ -36,4 +36,4 @@ mon-cv/
 3. Aucune installation requise
 
 ## Auteur
-Amadou Diallo — Licence 2 Informatique, Université Iba Der Thiam de Thiès
+Abdoulaye Bousso — Licence 2 Informatique, Université Iba Der Thiam de Thiès
