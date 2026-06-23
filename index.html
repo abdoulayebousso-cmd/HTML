@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV — Abdoulaye Bousso</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Bouton mode sombre -->
+    <button id="theme-toggle" aria-label="Basculer le thème">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Bouton retour en haut -->
+    <button id="back-to-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar">
+        <div class="nav-brand">AB</div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#experiences">Expériences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-grid-bg"></div>
+    <div class="header-content">
+            <div class="header-text">
+                <p class="eyebrow">Étudiant en Licence 2 Informatique</p>
+                <h1>Abdoulaye<br><em>Bousso</em></h1>
+                <p class="subtitle">Développeur Web & Passionné d'Intelligence Artificielle</p>
+                <div class="header-infos">
+                    <span><i class="fas fa-envelope"></i> abdoulaye.bousso@univ-thies.sn</span>
+                    <span><i class="fas fa-phone"></i> +221 77 122 46 26</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal</span>
+                </div>
+                <div class="header-actions">
+                    <a href="#contact" class="btn-primary">Me contacter</a>
+                    <a href="#projets" class="btn-secondary">Voir mes projets</a>
+                </div>
+            </div>
+            <div class="header-photo">
+                <img src="./images/profil.jpeg" alt="Photo de profil Abdoulaye Bousso">
+            </div>
+        </div>
+        <div class="header-scroll">
+            <span>Défiler</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- À PROPOS -->
+        <section id="about">
+            <div class="container">
+                <div class="section-label">01 — À propos</div>
+                <h2>Qui suis-je ?</h2>
+                <div class="about-grid">
+                    <p class="about-text">
+                        Étudiant en deuxième année de Licence Informatique à l'Université Iba Der Thiam de Thiès, 
+                        je suis passionné par le développement web et les nouvelles technologies. 
+                        Curieux et rigoureux, j'aime transformer des idées en solutions concrètes et élégantes.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Années d'études</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Projets réalisés</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMATION -->
+        <section id="formation">
+            <div class="container">
+                <div class="section-label">02 — Formation</div>
+                <h2>Parcours académique</h2>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-date">2023 — En cours</div>
+                        <div class="timeline-content">
+                            <h3>Licence 2 Informatique</h3>
+                            <p class="timeline-school">Université Iba Der Thiam — Thiès, Sénégal</p>
+                            <p>Algorithmes, bases de données, développement web, systèmes d'exploitation, réseaux.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-date">2022 — 2023</div>
+                        <div class="timeline-content">
+                            <h3>Licence 1 Informatique</h3>
+                            <p class="timeline-school">Université Iba Der Thiam — Thiès, Sénégal</p>
+                            <p>Programmation C, mathématiques discrètes, architecture des ordinateurs.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-date">2021 — 2022</div>
+                        <div class="timeline-content">
+                            <h3>Baccalauréat Série STIDD</h3>
+                            <p class="timeline-school">Lycée technique Maurice Delafosse — Dakar, Sénégal</p>
+                            <p>Spécialité Mathématiques , Sciences Physiques <br> Construction mecanique , Mecanique .</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPÉTENCES -->
+        <section id="competences">
+            <div class="container">
+                <div class="section-label">03 — Compétences</div>
+                <h2>Mes compétences</h2>
+                <div class="skills-grid">
+                    <div class="skills-col">
+                        <h3>Techniques</h3>
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info"><span>HTML5 / CSS3</span><span class="skill-pct">85%</span></div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="70">
+                            <div class="skill-info"><span>JavaScript</span><span class="skill-pct">70%</span></div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="80">
+                            <div class="skill-info"><span>C / Algorithmique</span><span class="skill-pct">80%</span></div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="65">
+                            <div class="skill-info"><span>SQL / SQLite</span><span class="skill-pct">65%</span></div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="60">
+                            <div class="skill-info"><span>Python</span><span class="skill-pct">60%</span></div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                    </div>
+                    <div class="skills-col">
+                        <h3>Transversales</h3>
+                        <div class="skill-item" data-level="90">
+                            <div class="skill-info"><span>Travail en équipe</span><span class="skill-pct">90%</span></div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info"><span>Résolution de problèmes</span><span class="skill-pct">85%</span></div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="75">
+                            <div class="skill-info"><span>Communication</span><span class="skill-pct">75%</span></div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-item" data-level="80">
+                            <div class="skill-info"><span>Autonomie</span><span class="skill-pct">80%</span></div>
+                            <div class="skill-bar"><div class="skill-fill"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPÉRIENCES -->
+        <section id="experiences">
+            <div class="container">
+                <div class="section-label">04 — Expériences</div>
+                <h2>Expériences</h2>
+                <div class="exp-grid">
+                    <article class="exp-card">
+                        <div class="exp-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div class="exp-content">
+                            <h3>Stage Développement Web</h3>
+                            <p class="exp-company">Entreprise Tech Dakar — Été 2024</p>
+                            <p>Développement de pages web responsives, intégration de maquettes HTML/CSS, participation à des réunions d'équipe agile.</p>
+                        </div>
+                    </article>
+                    <article class="exp-card">
+                        <div class="exp-icon"><i class="fas fa-users"></i></div>
+                        <div class="exp-content">
+                            <h3>Tuteur Informatique Bénévole</h3>
+                            <p class="exp-company">Association Jeunesse Numérique — 2023</p>
+                            <p>Initiation à l'informatique pour des lycéens, enseignement des bases de la programmation et d'internet.</p>
+                        </div>
+                    </article>
+                    <article class="exp-card">
+                        <div class="exp-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <div class="exp-content">
+                            <h3>Représentant de classe</h3>
+                            <p class="exp-company">Université Iba Der Thiam — 2022-2023</p>
+                            <p>Coordination entre étudiants et administration, organisation d'activités pédagogiques.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETS -->
+        <section id="projets">
+            <div class="container">
+                <div class="section-label">05 — Projets</div>
+                <h2>Projets réalisés</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-num">01</div>
+                        <h3>Application Bibliothèque</h3>
+                        <p>Système de gestion de bibliothèque en C avec recherche dichotomique, ajout et affichage de livres via menu interactif.</p>
+                        <div class="project-tags">
+                            <span>C</span><span>Structures</span><span>Algorithmique</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-num">02</div>
+                        <h3>Base de Données Médicale</h3>
+                        <p>Conception d'une base de données SQLite pour une application médicale avec gestion des patients, services et assurances.</p>
+                        <div class="project-tags">
+                            <span>SQL</span><span>SQLite</span><span>Modélisation</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-num">03</div>
+                        <h3>CV Interactif</h3>
+                        <p>Développement d'un CV web moderne et responsive avec mode sombre, animations et formulaire de contact en HTML/CSS/JS pur.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-num">04</div>
+                        <h3>Gestion de Personnes</h3>
+                        <p>Programme C de gestion d'un annuaire de personnes avec saisie, validation et affichage structuré via menu interactif.</p>
+                        <div class="project-tags">
+                            <span>C</span><span>Struct</span><span>Validation</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- LANGUES & INTÉRÊTS -->
+        <section id="langues">
+            <div class="container">
+                <div class="langues-interests-grid">
+                    <div>
+                        <div class="section-label">06 — Langues</div>
+                        <h2>Langues</h2>
+                        <div class="langue-item">
+                            <span>Wolof</span>
+                            <span class="langue-niveau natif">Langue maternelle</span>
+                        </div>
+                        <div class="langue-item">
+                            <span>Français</span>
+                            <span class="langue-niveau courant">Courant</span>
+                        </div>
+                        <div class="langue-item">
+                            <span>Anglais</span>
+                            <span class="langue-niveau intermediaire">Intermédiaire</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="section-label">07 — Centres d'intérêt</div>
+                        <h2>Intérêts</h2>
+                        <div class="interests-list">
+                            <div class="interest"><i class="fas fa-code"></i> Programmation</div>
+                            <div class="interest"><i class="fas fa-robot"></i> Intelligence Artificielle</div>
+                            <div class="interest"><i class="fas fa-book"></i> Lecture Tech</div>
+                            <div class="interest"><i class="fas fa-futbol"></i> Football</div>
+                            <div class="interest"><i class="fas fa-chess"></i> Échecs</div>
+                            <div class="interest"><i class="fas fa-music"></i> Musique</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="container">
+                <div class="section-label">08 — Contact</div>
+                <h2>Me contacter</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p>Disponible pour un stage, une collaboration ou tout échange autour du développement web et de l'informatique.</p>
+                        <div class="contact-links">
+                            <a href="mailto:abdoulaye.bousso@univ-thies.sn"><i class="fas fa-envelope"></i> abdoulaye.bousso@univ-thies.sn</a>
+                            <a href="tel:+221771224626"><i class="fas fa-phone"></i> +221 77 122 46 26</a>
+                            <a href="https://linkedin.com/in/abdoulaye.bousso@univ-thies.sn" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/abdoulaye.bousso@univ-thies.sn</a>
+                            <a href="https://github.com/abdoulayebousso-cmd" target="_blank"><i class="fab fa-github"></i> github.com/abdoulayebousso-cmd</a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom">
+                            <span class="error-msg" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="votre@email.com">
+                            <span class="error-msg" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Votre message..."></textarea>
+                            <span class="error-msg" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn-primary">Envoyer <i class="fas fa-paper-plane"></i></button>
+                        <p class="form-success" id="form-success">✔ Message envoyé avec succès !</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+    <p>© 2025 Abdoulaye Bousso — Université Iba Der Thiam de Thiès</p>
+
+    <div class="footer-links">
+        <a href="https://www.linkedin.com/in/abdoulaye-bousso" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/abdoulayebousso-cmd" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
