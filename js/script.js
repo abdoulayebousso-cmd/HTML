@@ -1,14 +1,11 @@
 // =============================================
 //   CV INTERACTIF — script.js
-//   Mode sombre, menu hamburger, animations
-//   barres de compétences, formulaire, scroll
 // =============================================
 
 // ---------- MODE SOMBRE / CLAIR ----------
 const themeToggle = document.getElementById('theme-toggle');
 const themeIcon = themeToggle.querySelector('i');
 
-// Charger le thème sauvegardé
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'light') {
     document.body.classList.add('light');
@@ -30,7 +27,6 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
 });
 
-// Fermer le menu au clic sur un lien
 navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('open');
@@ -65,13 +61,10 @@ const animateSkills = (entries) => {
     });
 };
 
-const skillObserver = new IntersectionObserver(animateSkills, {
-    threshold: 0.3
-});
-
+const skillObserver = new IntersectionObserver(animateSkills, { threshold: 0.3 });
 skillItems.forEach(item => skillObserver.observe(item));
 
-// ---------- SMOOTH SCROLL POUR LES ANCRES ----------
+// ---------- SMOOTH SCROLL ----------
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
         const href = anchor.getAttribute('href');
@@ -82,57 +75,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
-});
-
-// ---------- FORMULAIRE DE CONTACT ----------
-const form = document.getElementById('contact-form');
-
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const name = document.getElementById('name');
-    const email = document.getElementById('email');
-    const message = document.getElementById('message');
-    const nameError = document.getElementById('name-error');
-    const emailError = document.getElementById('email-error');
-    const messageError = document.getElementById('message-error');
-    const formSuccess = document.getElementById('form-success');
-
-    // Réinitialiser les erreurs
-    nameError.textContent = '';
-    emailError.textContent = '';
-    messageError.textContent = '';
-    formSuccess.style.display = 'none';
-
-    let valid = true;
-
-    // Validation nom
-    if (name.value.trim() === '') {
-        nameError.textContent = 'Le nom est requis.';
-        valid = false;
-    }
-
-    // Validation email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (email.value.trim() === '') {
-        emailError.textContent = "L'e-mail est requis.";
-        valid = false;
-    } else if (!emailRegex.test(email.value.trim())) {
-        emailError.textContent = "Format d'e-mail invalide.";
-        valid = false;
-    }
-
-    // Validation message
-    if (message.value.trim() === '') {
-        messageError.textContent = 'Le message est requis.';
-        valid = false;
-    }
-
-    if (valid) {
-        formSuccess.style.display = 'block';
-        form.reset();
-        setTimeout(() => { formSuccess.style.display = 'none'; }, 4000);
-    }
 });
 
 // ---------- ANIMATION SCROLL SECTIONS ----------
@@ -153,3 +95,6 @@ sections.forEach(section => {
     section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     fadeObserver.observe(section);
 });
+
+// NB : Le formulaire de contact est géré dans index.html
+// (validation + envoi EmailJS en un seul endroit)
